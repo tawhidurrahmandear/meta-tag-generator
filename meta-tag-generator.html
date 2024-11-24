@@ -1,0 +1,89 @@
+<script src="meta-tag-generator.js"></script>
+<link rel="stylesheet" type="text/css" href="meta-tag-generator.css">
+
+<!-- Meta Tag Generator -->
+<!-- developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com -->
+<!-- Live Preview available at https://www.devilhunter.net/p/meta-tag-generator.html -->
+
+
+<div style="text-align: justify;">
+<span style="font-family: Ubuntu;">The meta tag generator will create description, keyword and other important meta tags for you with provided content.</span><br /><!--more--><br />
+
+<br>
+
+  <form id="meta-tag-generator">
+    <label for="canonical-url">Canonical URL:</label>
+    <input class="meta-tag-generator_input" type="text" id="canonical-url" placeholder="https://example.com/page"><br>
+
+    <label for="language">Language:</label>
+	<input class="meta-tag-generator_input" type="text" id="language" placeholder="Type en for English, or bn for Bangla"><br>
+	<p align="right"><font face="Trebuchet MS"><a href="https://www.devilhunter.net/p/html-language-code.html" target="_blank" rel="noopener" style="text-decoration: none"><span style="font-size: 10pt; font-weight:700"><font color="#0078d7">* List of ISO Language Codes ↗️</font></span></a></font></p><br>
+	
+    <label for="charset">Character Set:</label>
+    <select class="meta-tag-generator_select" id="charset">
+      <option value="UTF-8" selected>UTF-8</option>
+      <option value="ISO-8859-1">ISO-8859-1</option>
+      <option value="Windows-1252">Windows-1252</option>
+    </select><br>
+	
+    <label for="description">Description:</label>
+    <input class="meta-tag-generator_input" type="text" id="description" placeholder="90-150 characters with a brief overview of the content"><br>
+
+    <label for="keywords">Keywords:</label>
+    <input class="meta-tag-generator_input" type="text" id="keywords" placeholder="Keyword1, Key word2, Long Tail Key Words 3"><br>
+
+    <label for="copyright">Copyright:</label>
+    <input class="meta-tag-generator_input" type="text" id="copyright" placeholder="Individual or Organization"><br>
+
+    <label for="author">Author:</label>
+    <input class="meta-tag-generator_input" type="text" id="author" placeholder="Individual or Organization"><br>
+	
+    <label for="distribution">Distribution:</label>
+    <select class="meta-tag-generator_select" id="distribution">
+      <option value="global" selected>global</option>
+      <option value="local">local</option>
+    </select><br>
+	
+    <label for="rating">Rating:</label>
+    <select class="meta-tag-generator_select" id="rating">
+      <option value="general" selected>general</option>
+      <option value="mature">mature</option>
+    </select><br>
+	
+    <label for="classification">Classification:</label>
+    <input class="meta-tag-generator_input" type="text" id="classification" placeholder="newspaper, or business, or ecommerce, or social network etc"><br>
+	 
+	<label for="robots">Robots:</label>
+    <select class="meta-tag-generator_select" id="robots">
+      <option value="index, follow" selected>index, follow. Default pages (e.g., home, articles)</option>
+      <option value="index, nofollow">index, nofollow. For pages with paid links</option>
+      <option value="noindex, nofollow">noindex, nofollow. For low-value or secret pages (e.g., thank-you pages, admin pages),</option>
+    </select><br>
+	
+	<label for="revisit-after">Revisit After:</label>
+    <select class="meta-tag-generator_select" id="revisit-after">
+      <option value="always">Always. For extremely dynamic content like Stock Tickers</option>
+      <option value="hourly">Hourly. For news sites, live feeds, or rapidly changing contents.</option>
+      <option value="weekly">Weekly. Best for blogs, news articles, or regularly updated websites</option>
+      <option value="monthly" selected>Monthly. For normal static websites</option>
+      <option value="never">Never. Only for those websites which will never be updated</option>
+    </select><br>
+
+    <label for="cache-control">Cache Control:</label>
+    <select class="meta-tag-generator_select" id="cache-control">
+      <option value="no-cache" selected>no-cache. Must be revalidated with the server before being used from cache.</option>
+      <option value="private">private. For account information or order history. Anything secret.</option>
+      <option value="public">public. For Static resources like images, stylesheets, or other publicly available content.</option>
+    </select><br>
+
+    <button class="meta-tag-generator_button" type="button" onclick="generateMetaTags()">Generate Meta Tags</button>
+    <button class="meta-tag-generator_button" type="button" onclick="clearFields()">Clear</button>
+  </form>
+  
+  <br><br>
+
+  <textarea class="meta-tag-generator_textarea" id="metatag" readonly></textarea>
+  
+  <style>
+
+</style>
